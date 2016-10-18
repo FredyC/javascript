@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   rules: {
     // enforces getter/setter pairs in objects
     'accessor-pairs': 'off',

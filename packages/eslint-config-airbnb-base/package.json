@@ -9,7 +9,8 @@
     "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
     "pretest": "npm run --silent lint",
     "test": "npm run --silent tests-only",
-    "travis": "npm run --silent test"
+    "travis": "npm run --silent test",
+    "bundle": "rollup --format=umd --name=eslintrules --output=eslint-rules.js -- entry.js"
   },
   "repository": {
     "type": "git",
@@ -51,6 +52,8 @@
     "eslint-find-rules": "^1.14.0",
     "eslint-plugin-import": "^2.0.1",
     "in-publish": "^2.0.0",
+    "lodash.merge": "4.6.0",
+    "rollup": "0.36.3",
     "safe-publish-latest": "^1.1.1",
     "tape": "^4.6.2"
   },

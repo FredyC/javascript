@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   rules: {
     // enforce spacing inside array brackets
     'array-bracket-spacing': ['error', 'never'],

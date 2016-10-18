@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   rules: {
     // enforce or disallow variable initializations at definition
     'init-declarations': 'off',
